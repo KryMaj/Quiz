@@ -10,6 +10,6 @@ public class HelloController {
     public String hello(Model model){
 
         model.addAttribute("message", "message 2");
-        return "hello";
+        return "index";
     }
 }
