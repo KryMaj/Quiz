@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Quiz Application</title>
+
+  <title>Quiz Application - game</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,11 +31,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+
+            <a class="nav-link js-scroll-trigger" href="#questions">Questions</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -45,32 +45,9 @@
 
 
 
-  <section id="options">
-<!--    <form action="#" th:action="@{/game}" th:object="${userAnswer}" method="post">-->
-<!--      <div class="form-row">-->
-<!--        <h3 th:text="'Question ' + ${currentQuestionNumber} + '/' + ${totalQuestionNumber} + ':'" ></h3>-->
-<!--        <h4 th:text="${currentQuestion}"></h4>-->
-<!--        </div>-->
-<!--        <div class="form-row">-->
-<!--        <div class="form-group">-->
-<!--          <p>Wybierz poprawną odpowiedź</p>-->
-<!--          <th:block th:each="answer, iter : ${currentQuestionAnswers}">-->
-<!--            <div class="form-check">-->
-<!--              <input class="form-check-input" type="radio" name="answersRadioOptions"-->
-<!--                     th:id="'answer_' + ${iter.current}" th:value="${answer}" th:field="*{answer}">-->
-<!--              <label class="form-check-label" th:for="'answer_' + ${iter.current}"-->
-<!--                     th:text="${answer}">-->
-<!--              </label>-->
-<!--            </div>-->
-<!--          </th:block>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="form-row">-->
-<!--        <div class="form-group">-->
-<!--          <button type="submit" class="btn btn-primary">Next</button>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </form>-->
+
+  <section id="questions">
+
     <form action="#" th:action="@{/game}" th:object="${userAnswer}" method="post">
       <div class="form-row">
         <h3 th:text="'Question ' + ${currentQuestionNumber} + '/' + ${totalQuestionNumber} + ':'"></h3>
