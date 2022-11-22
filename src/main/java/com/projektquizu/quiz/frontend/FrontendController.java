@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class FrontendController {
 
+
+
     @Autowired
     private QuizDataService quizDataService;
 
@@ -57,6 +59,7 @@ public class FrontendController {
         } else {
             return "redirect:summary";
         }
+
 }
 
 @GetMapping("/summary")

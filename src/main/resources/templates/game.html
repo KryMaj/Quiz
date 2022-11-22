@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+
   <title>Quiz Application - game</title>
 
   <!-- Bootstrap core CSS -->
@@ -30,11 +31,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+
             <a class="nav-link js-scroll-trigger" href="#questions">Questions</a>
           </li>
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link js-scroll-trigger" href="#services">Services</a>-->
-<!--          </li>-->
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -45,7 +45,9 @@
 
 
 
+
   <section id="questions">
+
     <form action="#" th:action="@{/game}" th:object="${userAnswer}" method="post">
       <div class="form-row">
         <h3 th:text="'Question ' + ${currentQuestionNumber} + '/' + ${totalQuestionNumber} + ':'"></h3>

@@ -33,6 +33,7 @@ public class QuizDataService {
         }
     }
 
+
     private List<QuestionsDto.QuestionDto> getQuizQuestions(int numberOfQuestions, int categoryId, Difficulty difficulty){
         RestTemplate restTemplate = new RestTemplate();
 

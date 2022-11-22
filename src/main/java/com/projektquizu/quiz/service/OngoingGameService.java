@@ -1,12 +1,10 @@
 package com.projektquizu.quiz.service;
 
-
 import com.projektquizu.quiz.dto.QuestionsDto;
 import com.projektquizu.quiz.frontend.Difficulty;
 import com.projektquizu.quiz.frontend.GameOptions;
 import lombok.Getter;
 import lombok.extern.java.Log;
-import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
@@ -16,9 +14,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+
 @Log
 @Service
 @SessionScope
+
 public class OngoingGameService {
     private GameOptions gameOptions;
     private int currentQuestionIndex;
@@ -33,6 +33,7 @@ public class OngoingGameService {
         this.gameOptions = gameOptions;
         this.currentQuestionIndex = 0;
         this.points = 0;
+
        this.questions= quizDataService.getQuizQuestions(gameOptions);
     }
 
